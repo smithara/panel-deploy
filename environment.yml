@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - markdown
+  - notebook
+  - pandas
+  - panel=0.14.1
+  - tabulate
