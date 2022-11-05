@@ -1,0 +1,8 @@
+services:
+  panel:
+    image: mypanel
+    volumes:
+      - /home/ubuntu/panel-deploy/src:/home/panel-user/src
+    ports:
+      - 80:5006
+    command: panel serve src/test-dashboard.py --allow-websocket-origin=* --warm --num-procs 1
